@@ -5,8 +5,7 @@ import styles from './index.module.css'
 
 const HomeSection = forwardRef<HTMLElement>((props, ref) => {
   return (
-    <section id="home" className={styles.homeSection} ref={ref}>
-      {/* <DynamicBackgroundNoSSR></DynamicBackgroundNoSSR> */}
+    <section id="home" ref={ref}>
       <Head>
         <title>Merstab | Home</title>
         <meta charSet="utf-8" />

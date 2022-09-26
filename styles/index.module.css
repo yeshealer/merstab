@@ -219,7 +219,6 @@
 
 .startEarningRow {
   display: flex;
-  height: 100vh;
   background: url(../public/magic/abstract-wave-first-screen.png) no-repeat;
   background-position: 130%;
   background-size: 80%;
