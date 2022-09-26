@@ -1,7 +1,7 @@
 // Overview page
-
-import { Col, Row } from 'antd'
+import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
+import { Col, Row } from 'antd'
 import VaultCard from '../components/VaultCard'
 import styles from '../styles/overview.module.css'
 import { DevnetPerp } from '../vaults/DEVNET-PERP'
@@ -23,6 +23,11 @@ const Overview = () => {
   const { client } = useMerstab()
   return (
     <div className={styles.overviewWrapper}>
+      <Head>
+        <title>Merstab | Overview</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="container">
         {/* <DynamicBackgroundNoSSR></DynamicBackgroundNoSSR> */}
         <Col className={styles.main}>

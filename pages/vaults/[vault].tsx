@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React, { useState, useEffect } from 'react'
 import StrategyInfo from '../../components/StrategyInfo'
 import VaultDepositsInfo from '../../components/VaultDepositsInfo'
@@ -27,6 +28,11 @@ const Vault = () => {
 
   return (
     <>
+      <Head>
+        <title>Merstab | Vaults</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className={styles.vaultPageWrapper}>
         <div className="container">
           <div className={styles.vaultSection}>

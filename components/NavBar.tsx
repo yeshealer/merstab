@@ -19,7 +19,7 @@ const NavBar = () => {
     <>
       {router.pathname !== '/' ? (
         <section className={styles.navRowBoxShadow}>
-          <div className={styles.navRow + ' container'}>
+          <div className={styles.navRow + ' ' + styles.container}>
             <div className={styles.icon}>
               <Link href={'/'}>
                 <div className={indexStyles.betaLogo}>
