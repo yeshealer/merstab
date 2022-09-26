@@ -1,0 +1,1575 @@
+{
+  "version": "0.1.0",
+  "name": "merstab_protocol",
+  "instructions": [
+    {
+      "name": "initialize",
+      "accounts": [],
+      "args": []
+    },
+    {
+      "name": "addVault",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "manager",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "tokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenAccountAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakedTokenMint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "payer",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "mint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "rent",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "limit",
+          "type": "u64"
+        },
+        {
+          "name": "mangoAccountOwnerBump",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "stake",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "vaultTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakersTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakersAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakedTokenMintAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "staker",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "stats",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakedTokenMint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "vaultTokenAccountBump",
+          "type": "u8"
+        },
+        {
+          "name": "stakedTokenMintAuthorityBump",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "unstake",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "vaultTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "vaultTokenAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakersTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakersAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakedTokenMintAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "staker",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "stats",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakedTokenMint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "mangoAccountOwnerBump",
+          "type": "u8"
+        },
+        {
+          "name": "statsBump",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "createMangoAccount",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "unverifiedMangoOwnerPda",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "unverifiedMangoAccountPda",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "manager",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "mangoProgramId",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoGroupAi",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "mangoAccountOwnerBump",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "closeMangoAccount",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoGroup",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccountOwner",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoProgramId",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "mangoAccountOwnerBump",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "depositToMango",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoGroup",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccountOwner",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoCache",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoRootBank",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoNodeBank",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoVault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoOwnerTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoProgramId",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "mangoAccountOwnerBump",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "withdrawFromMango",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoGroup",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccountOwner",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoCache",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoRootBank",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoNodeBank",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoVault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoOwnerTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "signer",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakedTokenMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoProgramId",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "mangoAccountOwnerBump",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "delegateMangoAccount",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoGroup",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccountOwner",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "delegateAccount",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoProgramId",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "mangoAccountOwnerBump",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "placeMangoPerpOrder",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoGroup",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccountOwner",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoCache",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoPerpMarket",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoBids",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAsks",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoEventQueue",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoProgramId",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "side",
+          "type": {
+            "defined": "Side"
+          }
+        },
+        {
+          "name": "price",
+          "type": "i64"
+        },
+        {
+          "name": "quantity",
+          "type": "i64"
+        },
+        {
+          "name": "clientOrderId",
+          "type": "u64"
+        },
+        {
+          "name": "orderType",
+          "type": {
+            "defined": "OrderType"
+          }
+        },
+        {
+          "name": "reduceOnly",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "cancelMangoPerpOrder",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoGroup",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccountOwner",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoPerpMarket",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoBids",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAsks",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoProgramId",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "orderId",
+          "type": "i128"
+        }
+      ]
+    },
+    {
+      "name": "cancelMangoSpotOrder",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoGroup",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAccountOwner",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoPerpMarket",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoBids",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoAsks",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mangoProgramId",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "orderId",
+          "type": "i128"
+        }
+      ]
+    },
+    {
+      "name": "zetaInitializeMarginAccount",
+      "accounts": [
+        {
+          "name": "zetaProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "initializeMarginCpiAccounts",
+          "accounts": [
+            {
+              "name": "marginAccount",
+              "isMut": true,
+              "isSigner": false
+            },
+            {
+              "name": "authority",
+              "isMut": true,
+              "isSigner": true
+            },
+            {
+              "name": "zetaProgram",
+              "isMut": false,
+              "isSigner": false
+            },
+            {
+              "name": "systemProgram",
+              "isMut": false,
+              "isSigner": false
+            },
+            {
+              "name": "zetaGroup",
+              "isMut": false,
+              "isSigner": false
+            }
+          ]
+        }
+      ],
+      "args": []
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Vault",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "manager",
+            "type": "publicKey"
+          },
+          {
+            "name": "mint",
+            "type": "publicKey"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "type": "u64"
+          },
+          {
+            "name": "depositEquity",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stats",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "equity",
+            "type": "u64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Greeks",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "nonce",
+            "type": "u8"
+          },
+          {
+            "name": "markPrices",
+            "type": {
+              "array": ["u64", 46]
+            }
+          },
+          {
+            "name": "markPricesPadding",
+            "type": {
+              "array": ["u64", 92]
+            }
+          },
+          {
+            "name": "productGreeks",
+            "type": {
+              "array": [
+                {
+                  "defined": "ProductGreeks"
+                },
+                22
+              ]
+            }
+          },
+          {
+            "name": "productGreeksPadding",
+            "type": {
+              "array": [
+                {
+                  "defined": "ProductGreeks"
+                },
+                44
+              ]
+            }
+          },
+          {
+            "name": "updateTimestamp",
+            "type": {
+              "array": ["u64", 2]
+            }
+          },
+          {
+            "name": "updateTimestampPadding",
+            "type": {
+              "array": ["u64", 4]
+            }
+          },
+          {
+            "name": "retreatExpirationTimestamp",
+            "type": {
+              "array": ["u64", 2]
+            }
+          },
+          {
+            "name": "retreatExpirationTimestampPadding",
+            "type": {
+              "array": ["u64", 4]
+            }
+          },
+          {
+            "name": "interestRate",
+            "type": {
+              "array": ["i64", 2]
+            }
+          },
+          {
+            "name": "interestRatePadding",
+            "type": {
+              "array": ["i64", 4]
+            }
+          },
+          {
+            "name": "nodes",
+            "type": {
+              "array": ["u64", 5]
+            }
+          },
+          {
+            "name": "volatility",
+            "type": {
+              "array": ["u64", 10]
+            }
+          },
+          {
+            "name": "volatilityPadding",
+            "type": {
+              "array": ["u64", 20]
+            }
+          },
+          {
+            "name": "nodeKeys",
+            "type": {
+              "array": ["publicKey", 138]
+            }
+          },
+          {
+            "name": "padding",
+            "type": {
+              "array": ["u8", 1647]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZetaGroup",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "nonce",
+            "type": "u8"
+          },
+          {
+            "name": "vaultNonce",
+            "type": "u8"
+          },
+          {
+            "name": "insuranceVaultNonce",
+            "type": "u8"
+          },
+          {
+            "name": "frontExpiryIndex",
+            "type": "u8"
+          },
+          {
+            "name": "haltState",
+            "type": {
+              "defined": "HaltState"
+            }
+          },
+          {
+            "name": "underlyingMint",
+            "type": "publicKey"
+          },
+          {
+            "name": "oracle",
+            "type": "publicKey"
+          },
+          {
+            "name": "greeks",
+            "type": "publicKey"
+          },
+          {
+            "name": "pricingParameters",
+            "type": {
+              "defined": "PricingParameters"
+            }
+          },
+          {
+            "name": "marginParameters",
+            "type": {
+              "defined": "MarginParameters"
+            }
+          },
+          {
+            "name": "products",
+            "type": {
+              "array": [
+                {
+                  "defined": "Product"
+                },
+                46
+              ]
+            }
+          },
+          {
+            "name": "productsPadding",
+            "type": {
+              "array": [
+                {
+                  "defined": "Product"
+                },
+                92
+              ]
+            }
+          },
+          {
+            "name": "expirySeries",
+            "type": {
+              "array": [
+                {
+                  "defined": "ExpirySeries"
+                },
+                2
+              ]
+            }
+          },
+          {
+            "name": "expirySeriesPadding",
+            "type": {
+              "array": [
+                {
+                  "defined": "ExpirySeries"
+                },
+                4
+              ]
+            }
+          },
+          {
+            "name": "totalInsuranceVaultDeposits",
+            "type": "u64"
+          },
+          {
+            "name": "padding",
+            "type": {
+              "array": ["u8", 1063]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "MarginAccount",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "publicKey"
+          },
+          {
+            "name": "nonce",
+            "type": "u8"
+          },
+          {
+            "name": "balance",
+            "type": "u64"
+          },
+          {
+            "name": "forceCancelFlag",
+            "type": "bool"
+          },
+          {
+            "name": "openOrdersNonce",
+            "type": {
+              "array": ["u8", 138]
+            }
+          },
+          {
+            "name": "seriesExpiry",
+            "type": {
+              "array": ["u64", 6]
+            }
+          },
+          {
+            "name": "positions",
+            "type": {
+              "array": [
+                {
+                  "defined": "Position"
+                },
+                46
+              ]
+            }
+          },
+          {
+            "name": "positionsPadding",
+            "type": {
+              "array": [
+                {
+                  "defined": "Position"
+                },
+                92
+              ]
+            }
+          },
+          {
+            "name": "rebalanceAmount",
+            "type": "i64"
+          },
+          {
+            "name": "padding",
+            "type": {
+              "array": ["u8", 388]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "ProductGreeks",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "delta",
+            "type": "u64"
+          },
+          {
+            "name": "vega",
+            "type": {
+              "defined": "AnchorDecimal"
+            }
+          },
+          {
+            "name": "volatility",
+            "type": {
+              "defined": "AnchorDecimal"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "AnchorDecimal",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "flags",
+            "type": "u32"
+          },
+          {
+            "name": "hi",
+            "type": "u32"
+          },
+          {
+            "name": "lo",
+            "type": "u32"
+          },
+          {
+            "name": "mid",
+            "type": "u32"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HaltState",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "halted",
+            "type": "bool"
+          },
+          {
+            "name": "spotPrice",
+            "type": "u64"
+          },
+          {
+            "name": "timestamp",
+            "type": "u64"
+          },
+          {
+            "name": "markPricesSet",
+            "type": {
+              "array": ["bool", 2]
+            }
+          },
+          {
+            "name": "markPricesSetPadding",
+            "type": {
+              "array": ["bool", 4]
+            }
+          },
+          {
+            "name": "marketNodesCleaned",
+            "type": {
+              "array": ["bool", 2]
+            }
+          },
+          {
+            "name": "marketNodesCleanedPadding",
+            "type": {
+              "array": ["bool", 4]
+            }
+          },
+          {
+            "name": "marketCleaned",
+            "type": {
+              "array": ["bool", 46]
+            }
+          },
+          {
+            "name": "marketCleanedPadding",
+            "type": {
+              "array": ["bool", 92]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "PricingParameters",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "optionTradeNormalizer",
+            "type": {
+              "defined": "AnchorDecimal"
+            }
+          },
+          {
+            "name": "futureTradeNormalizer",
+            "type": {
+              "defined": "AnchorDecimal"
+            }
+          },
+          {
+            "name": "maxVolatilityRetreat",
+            "type": {
+              "defined": "AnchorDecimal"
+            }
+          },
+          {
+            "name": "maxInterestRetreat",
+            "type": {
+              "defined": "AnchorDecimal"
+            }
+          },
+          {
+            "name": "maxDelta",
+            "type": "u64"
+          },
+          {
+            "name": "minDelta",
+            "type": "u64"
+          },
+          {
+            "name": "padding",
+            "type": {
+              "array": ["u8", 32]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "MarginParameters",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "futureMarginInitial",
+            "type": "u64"
+          },
+          {
+            "name": "futureMarginMaintenance",
+            "type": "u64"
+          },
+          {
+            "name": "optionMarkPercentageLongInitial",
+            "type": "u64"
+          },
+          {
+            "name": "optionSpotPercentageLongInitial",
+            "type": "u64"
+          },
+          {
+            "name": "optionSpotPercentageShortInitial",
+            "type": "u64"
+          },
+          {
+            "name": "optionDynamicPercentageShortInitial",
+            "type": "u64"
+          },
+          {
+            "name": "optionMarkPercentageLongMaintenance",
+            "type": "u64"
+          },
+          {
+            "name": "optionSpotPercentageLongMaintenance",
+            "type": "u64"
+          },
+          {
+            "name": "optionSpotPercentageShortMaintenance",
+            "type": "u64"
+          },
+          {
+            "name": "optionDynamicPercentageShortMaintenance",
+            "type": "u64"
+          },
+          {
+            "name": "optionShortPutCapPercentage",
+            "type": "u64"
+          },
+          {
+            "name": "padding",
+            "type": {
+              "array": ["u8", 32]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExpirySeries",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "activeTs",
+            "type": "u64"
+          },
+          {
+            "name": "expiryTs",
+            "type": "u64"
+          },
+          {
+            "name": "dirty",
+            "type": "bool"
+          },
+          {
+            "name": "padding",
+            "type": {
+              "array": ["u8", 15]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Strike",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "isSet",
+            "type": "bool"
+          },
+          {
+            "name": "value",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Product",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "market",
+            "type": "publicKey"
+          },
+          {
+            "name": "strike",
+            "type": {
+              "defined": "Strike"
+            }
+          },
+          {
+            "name": "dirty",
+            "type": "bool"
+          },
+          {
+            "name": "kind",
+            "type": {
+              "defined": "Kind"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Position",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "position",
+            "type": "i64"
+          },
+          {
+            "name": "costOfTrades",
+            "type": "u64"
+          },
+          {
+            "name": "closingOrders",
+            "type": "u64"
+          },
+          {
+            "name": "openingOrders",
+            "type": {
+              "array": ["u64", 2]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "ErrorCode",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "AccountNotMutable"
+          },
+          {
+            "name": "UnsupportedKind"
+          },
+          {
+            "name": "ProductStrikeUninitialized"
+          },
+          {
+            "name": "InvalidProductMarketKey"
+          },
+          {
+            "name": "MarketNotLive"
+          },
+          {
+            "name": "ProductDirty"
+          },
+          {
+            "name": "InvalidOptionKind"
+          },
+          {
+            "name": "OrderInvalid"
+          },
+          {
+            "name": "StakeMintMismatch"
+          },
+          {
+            "name": "OverStakeLimit"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Side",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Bid"
+          },
+          {
+            "name": "Ask"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OrderType",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Limit"
+          },
+          {
+            "name": "ImmediateOrCancel"
+          },
+          {
+            "name": "PostOnly"
+          },
+          {
+            "name": "Market"
+          },
+          {
+            "name": "PostOnlySlide"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SelfTradeBehavior",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "DecrementTake"
+          },
+          {
+            "name": "CancelProvide"
+          },
+          {
+            "name": "AbortTransaction"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PriceStatus",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Unknown"
+          },
+          {
+            "name": "Trading"
+          },
+          {
+            "name": "Halted"
+          },
+          {
+            "name": "Auction"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CorpAction",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "NoCorpAct"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PriceType",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Unknown"
+          },
+          {
+            "name": "Price"
+          },
+          {
+            "name": "TWAP"
+          },
+          {
+            "name": "Volatility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExpirySeriesStatus",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Uninitialized"
+          },
+          {
+            "name": "Initialized"
+          },
+          {
+            "name": "Live"
+          },
+          {
+            "name": "Expired"
+          },
+          {
+            "name": "ExpiredDirty"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kind",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Uninitialized"
+          },
+          {
+            "name": "Call"
+          },
+          {
+            "name": "Put"
+          },
+          {
+            "name": "Future"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZetaSide",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Uninitialized"
+          },
+          {
+            "name": "Bid"
+          },
+          {
+            "name": "Ask"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "address": "AQPDVpAsDtd8cfXVjrUEKrhchF4cYwST2wyq3tJa82ci"
+  }
+}

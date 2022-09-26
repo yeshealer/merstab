@@ -1,0 +1,6 @@
+.landingImage {
+  position: relative;
+  height: 500px;
+  z-index: 0;
+  padding-top: 600px !important;
+}

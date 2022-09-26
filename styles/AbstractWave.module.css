@@ -1,0 +1,24 @@
+.imageContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 50vh;
+}
+
+@media (max-width: 1000px) {
+  .imageContainer {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 770px) {
+  .imageContainer {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .imageContainer {
+    display: none;
+  }
+}

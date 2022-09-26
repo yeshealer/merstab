@@ -1,0 +1,127 @@
+.main {
+  padding: 0 0 115px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  max-width: 1060px;
+  margin: auto;
+}
+
+.totalValueLocked {
+  margin: 45px 0;
+  padding: 20px 0;
+  border-top: 1px solid #474747;
+  border-bottom: 1px solid #474747;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.vaults {
+  display: flex;
+  justify-content: space-around;
+}
+
+.overviewHeader {
+  margin-top: 72px;
+  margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: 500;
+  background: linear-gradient(112.42deg, #6f64eb 4.74%, #c353e5 40.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block;
+}
+
+.vimeoWrapper {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 100vw;
+  height: 66.66vw;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.vimeoWrapper iframe {
+  width: 100vw;
+  height: 69.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wavePosition {
+  position: absolute;
+  z-index: -1;
+  top: 90vh;
+}
+
+.imageContainer {
+  position: 'absolute';
+  top: 0;
+  width: 100vw;
+  height: 66.66vw;
+}
+
+.landingImage {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.overviewWrapper {
+  position: relative;
+  overflow: hidden;
+  background: url(../public/magic/rectangle.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text {
+  max-width: 640px;
+}
+
+@media (max-width: 991px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .totalValueLocked {
+    width: 100%;
+    margin: 50px 0;
+    font-size: 20px;
+  }
+  .overviewHeader {
+    font-size: 36px;
+    padding-top: 20px;
+  }
+  .main {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 551px) {
+  .text {
+    font-size: 14px;
+  }
+}

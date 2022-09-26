@@ -1,0 +1,313 @@
+.navRow {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  height: 62px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navRowBoxShadow {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 76px;
+  position: relative;
+}
+
+.noHomePage {
+  background-color: #0d0d0d;
+  border-bottom: 1px solid #333;
+}
+
+.boxShadow {
+  box-shadow: 0px 1px 5px 1px #dc5355;
+  position: relative;
+}
+
+.dropdownItems {
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.dropdownItems:hover {
+  color: white;
+}
+
+.icon {
+  margin: auto 0;
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 36px;
+  gap: 15px;
+}
+
+.betaLogo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.betaDiv {
+  position: absolute;
+  align-items: center;
+  top: -7px;
+  right: 42px;
+  transform: translateX(97px);
+  background: linear-gradient(#131313, #131313) padding-box, linear-gradient(168deg, #4b1e70, #292135) border-box;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  padding: 2px 8px;
+  cursor: pointer;
+  width: 48px;
+  height: 21px;
+}
+
+.beta {
+  position: absolute;
+  top: 0;
+  align-items: center;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  font-weight: 300;
+  background: linear-gradient(125.94deg, rgba(111, 37, 169, 0.17) 12.86%, rgba(107, 59, 185, 0.13) 93.14%), #ffffff85;
+  -webkit-background-clip: text;
+  line-height: 17px;
+  border-radius: 20px;
+  -webkit-text-fill-color: #fff;
+  font-size: 14px;
+}
+
+.navTabs {
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navItem {
+  padding: 10px 15px;
+  margin: 0 20px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.active {
+  color: #fff !important;
+  position: relative;
+}
+
+.active .linkGradient {
+  position: absolute;
+  height: 1px;
+  width: 70%;
+  background: linear-gradient(150deg, #2723e2 30%, #af09d9);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navItem:hover {
+  color: #fff !important;
+}
+
+.launchApp {
+  font-size: 16px !important;
+  padding: 15px 39px !important;
+  margin-left: 10px !important;
+  margin: auto !important;
+  cursor: pointer !important;
+  color: #fff !important;
+  background-color: transparent !important;
+  position: relative !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+.graBtnBefore {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 10px;
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+}
+
+.launchApp:hover {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 12px #9747ff;
+}
+
+.launchApp:hover .graBtnBefore {
+  background: none;
+}
+
+.yieldButton:focus .graBtnBefore {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  filter: drop-shadow(0px 0px 2px #ffffff);
+}
+
+.yieldButton:pressed .graBtnBefore {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 12px #9747ff, inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.graBtnAfter {
+  position: absolute;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 8px;
+  background-color: #0d0d0d;
+}
+
+.button {
+  margin: auto 0;
+}
+
+.dropdownMenu {
+  display: none;
+}
+
+.dropdown {
+  display: none;
+  cursor: pointer;
+}
+
+.mobileConnectButton {
+  display: none;
+}
+
+.wallet-adapter-dropdown-list {
+  z-index: 99;
+}
+
+.logoTxt {
+  margin-left: 20px;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .logoTxt {
+    display: none;
+  }
+  .navItem {
+    margin: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .navTabs {
+    display: none !important;
+  }
+
+  .icon {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .noHomePage {
+    border-bottom: none;
+    position: relative;
+  }
+
+  .launchApp {
+    padding: 8px 16px !important;
+    font-size: 14px;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  .walletButton {
+    font-size: 14px !important;
+  }
+
+  .boxShadow {
+    box-shadow: initial;
+  }
+
+  .dropdownMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 10px;
+  }
+
+  .dropdownContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    inset: 0;
+    background: #070707;
+    transition: height 770ms ease-in-out;
+    -webkit-transition: height 770ms ease-in-out;
+  }
+
+  .dropdownContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobileConWallet {
+    position: absolute;
+    top: 50%;
+    right: 85px;
+    transform: translateY(-50%);
+  }
+  .mobileConWallet .launchApp {
+    padding: 8px 10px !important;
+    height: inherit !important;
+  }
+}
+
+@media (max-width: 551px) {
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+  .mobileConWallet .launchApp {
+    font-size: 14px !important;
+    right: -14px;
+    padding: 6px 8px !important;
+  }
+  .dropdown img {
+    width: 36px;
+    vertical-align: bottom;
+  }
+  .navRow {
+    height: 60px;
+  }
+}

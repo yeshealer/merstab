@@ -1,0 +1,792 @@
+@font-face {
+  font-family: OpneSans;
+  src: url(../public/font/OpenSans-Regular.ttf);
+}
+
+.homeColumn {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -61px;
+}
+
+.yieldButton {
+  width: 80px;
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  width: 190px;
+  height: 48px;
+  cursor: pointer;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  align-self: center;
+}
+
+.yieldButton:hover {
+  background: linear-gradient(112.76deg, #2723e2 7.83%, #af09d9 52.35%);
+}
+
+.yieldButton:focus {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 2px #ffffff;
+}
+
+.yieldButton:pressed {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.betaLogo{
+  position: relative ;
+  color: white
+}
+
+.betaDiv {
+  position: absolute;
+    align-items: center;
+    top: -12px;
+    right: 50%;
+    transform: translateX(105px);
+    background: linear-gradient( #131313, #131313) padding-box, linear-gradient(168deg, #4B1E70, #292135) border-box;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    padding: 2px 8px;
+    cursor: pointer;
+    width: 48px;
+    height:21px;
+}
+
+.beta {
+  align-items: center;
+  position: absolute;
+  top: 0;
+    left: 8px;
+  letter-spacing: 0.5px;
+    font-size: 14px;
+    font-weight: 300;
+    background: linear-gradient(125.94deg, rgba(111, 37, 169, 0.17) 12.86%, rgba(107, 59, 185, 0.13) 93.14%), #ffffff85;
+    -webkit-background-clip: text;
+    line-height: 17px;
+    border-radius: 20px;
+    -webkit-text-fill-color: #fff;
+    font-size: 14px;
+}
+
+.contactUsButton {
+  background: linear-gradient(150deg, #2723e2 30%, #af09d9);
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  width: 156px;
+  height: 48px;
+  cursor: pointer;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contactUsButton:hover {
+  opacity: 1;
+}
+
+.learnMore {
+  border: 0;
+  background: transparent;
+  color: #cb367b;
+  font-size: 16px;
+  padding-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sectionHeader {
+  font-size: 24px;
+  padding-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.vaultHeader {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.18px;
+  color: #ffffff;
+}
+
+.teamText {
+  padding-bottom: 45px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.74);
+  text-align: left;
+}
+
+.teamHeader {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 56px;
+  color: #ffffff;
+  margin: 5px 0 30px;
+  text-align: center;
+}
+
+.perpHeader {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.marketMakingVault {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px 20px;
+  background: linear-gradient(
+    130deg,
+    rgb(175 9 217 / 30%) 0%,
+    rgba(220, 83, 85, 0.03) 98.33%
+  );
+  border: 1px solid #474747;
+  box-sizing: border-box;
+  border-radius: 8px;
+  min-width: 330px;
+  gap: 35px;
+}
+
+.marketMakingVault:hover {
+  filter: drop-shadow(0px 1px 32px #af09d9);
+  border: 1px solid #af09d9;
+  cursor: pointer;
+}
+
+.apy {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #ffffff;
+  align-self: center;
+}
+
+.vaultText {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  letter-spacing: 0.25px;
+  /* Text/Secondary */
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.flexRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15vh 0px;
+}
+
+.startEarningRow {
+  display: flex;
+  height: 100vh;
+  background: url(../public/magic/abstract-wave-first-screen.png) no-repeat;
+  background-position: 130%;
+  background-size: 80%;
+}
+
+.ourProductsRow {
+  position: relative;
+  padding-top: 140px;
+  margin-top: -70px;
+  background: linear-gradient(
+    180deg,
+    rgba(39, 35, 226, 0.2) 3.87%,
+    rgba(39, 35, 226, 0) 100%
+  );
+}
+
+.btwGradient {
+  position: absolute;
+  height: 180px;
+  width: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, rgb(46 15 63) 30%, rgb(14 12 41) 70%);
+  top: -40px;
+  filter: blur(30px);
+}
+
+.flexColumnProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 45px;
+}
+
+.missionFlexColumn {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.missionText {
+  display: flex;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.line {
+  margin: auto;
+  display: flex;
+  width: 68%;
+  text-align: center;
+  border-bottom: 1px solid #dc5355;
+  line-height: 0.1em;
+}
+
+.missionBottomLine {
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid #dc5355;
+  line-height: 0.1em;
+  margin: auto;
+}
+
+.ourMissionLine {
+  position: relative;
+  font-size: 30px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ourMissionLine::after,
+.ourMissionLine::before {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 1px;
+  content: '\a0';
+  background-color: #dc5355;
+}
+
+.ourMissionLine::before {
+  margin-left: -50%;
+  text-align: right;
+}
+
+.lineSpan {
+  background: transparent;
+  background: linear-gradient(90deg, #e15d47 -12.4%, #c62e85 112.8%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  background-color: transparent;
+  opacity: 1;
+  margin-top: 300px;
+  z-index: 1;
+}
+
+.earnYieldHeader {
+  font-family: OpneSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  text-overflow: wrap;
+  max-width: 630px;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.gardientYieldHeader {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55)
+    ),
+    linear-gradient(125.07deg, rgba(39, 35, 226, 0.59) 12.86%, #af09d9 41.24%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gardientYieldHeader span {
+  display: block;
+}
+
+.teamSection {
+  position: relative;
+  width: 100vw;
+  margin-top: 100px;
+  padding-bottom: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.teamMdBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../public/magic/rectangle.png) no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.teamEndBg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: url(../public/magic/perspective-grid.png) no-repeat;
+  background-position: bottom;
+  background-size: 100% 90px;
+}
+
+.teamMembers {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+  gap: 10px;
+}
+
+.team {
+  max-width: 214px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 15px;
+  position: relative;
+  border: 2px solid #4d1c73;
+  background: linear-gradient(
+    150.31deg,
+    #240a38 28.34%,
+    rgba(45, 47, 103, 0.2) 106.35%
+  );
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+}
+
+.team p {
+  margin-top: 0;
+}
+
+.teamImg img {
+  display: block;
+  width: 100%;
+}
+
+.teamPhoto {
+  max-width: 132px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: auto;
+  border: 3px solid #452360;
+  position: relative;
+}
+
+.teamPhotoBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: inset 0px 15px 15px rgba(0, 0, 0, 0.25);
+}
+
+.teamName {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.teamJob {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.ourProductsSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.missionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  background: url(../public/magic/detailed_wireframe_modern_techno_landscape_design_2204.png)
+    100% 100% no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text .btcPerpDescription {
+  align-self: flex-start;
+  max-width: 360px;
+}
+
+.missionWrapper {
+  width: 80%;
+  align-self: center;
+  margin: auto;
+}
+
+.teamSectionText {
+  max-width: 990px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.startEarningSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 100px;
+  justify-content: flex-start;
+}
+
+.startEarningSection p {
+  color: white;
+  margin: 5px 0 50px;
+  font-size: 24px;
+}
+
+.blackOverlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 100vh;
+  z-index: -1;
+}
+
+.productTitle {
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.cryptocurrencyIcon img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.cryptocurrencyIcon img::before {
+  position: absolute;
+  width: 72%;
+  height: 72%;
+}
+
+.teamExp {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .startEarningRow {
+    height: 83vh;
+  }
+  .missionSection,
+  .blackOverlay {
+    height: 83vh;
+  }
+  .earnYieldHeader {
+    width: unset;
+  }
+  .perpHeader {
+    align-self: center;
+  }
+  .text .btcPerpDescription {
+    align-self: center;
+    padding-bottom: 40px;
+    width: unset;
+  }
+  .ourProductsSection {
+    justify-content: space-between;
+  }
+  .teamSectionText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .teamSection {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .teamHeader {
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+  .teamMembers {
+    flex-wrap: wrap;
+    max-width: 991px;
+    margin: auto;
+    justify-content: center;
+  }
+  .team {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .startEarningRow {
+    background-position: 131% 0;
+  }
+  .flexRow {
+    padding: 10vh 10px;
+  }
+  .earnYieldHeader,
+  .perpHeader {
+    font-size: 48px;
+  }
+  .startEarningSection {
+    padding-top: 60px;
+  }
+  .startEarningSection p {
+    font-size: 20px;
+  }
+  .lineSpan,
+  .productTitle,
+  .teamHeader {
+    font-size: 28px;
+  }
+  .cryptocurrencyIcon img {
+    width: 60%;
+  }
+  .teamMembers {
+    flex-direction: column;
+  }
+  .team {
+    max-width: fit-content;
+    min-width: 431px;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    border: none;
+    background: none;
+    padding: 0 0 0 70px;
+  }
+  .teamImg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .teamContain {
+    display: flex;
+    gap: 20px;
+    border: 2px solid #4d1c73;
+    background: linear-gradient(
+      150.31deg,
+      #240a38 28.34%,
+      rgba(45, 47, 103, 0.2) 106.35%
+    );
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+  }
+  .teamName {
+    text-align: left;
+  }
+  .teamExp {
+    font-size: 14px;
+  }
+  .teamTxtInfo {
+    width: 100%;
+    margin-left: 85px;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 770px) {
+  .startEarningRow {
+    height: auto;
+    padding-bottom: 70vw;
+    background-position: 33% 100%;
+    background-size: 110%;
+  }
+  .startEarningSection {
+    padding-top: 45px;
+  }
+  .ourMissionLine {
+    padding-top: 0px;
+  }
+  .ourProductsSection {
+    flex-direction: column;
+  }
+  .earnYieldHeader,
+  .perpHeader {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+  .perpHeader {
+    margin-top: 0;
+  }
+  .text .btcPerpDescription {
+    max-width: initial;
+    font-size: 13px;
+  }
+  .marketMakingVault {
+    max-width: 300px;
+    margin: auto;
+    width: 100%;
+    min-width: initial;
+  }
+  .missionSection {
+    height: auto;
+    padding-bottom: 50vw;
+  }
+  .missionWrapper,
+  .missionBottomLine {
+    width: 100%;
+  }
+  .lineSpan,
+  .productTitle,
+  .teamHeader {
+    font-size: 24px;
+  }
+  .missionFlexColumn {
+    width: unset;
+  }
+  .flexRow {
+    padding: 7vh 10px;
+  }
+  .teamText {
+    width: unset;
+  }
+  .text {
+    width: 100%;
+  }
+  .team {
+    margin-top: 20px;
+  }
+  .teamEndBg {
+    background-size: 220% 90px;
+  }
+}
+
+@media (max-width: 551px) {
+  .team {
+    padding-left: 0px;
+    min-width: inherit;
+  }
+  .teamContain {
+    padding: 8px;
+    margin-left: 40px;
+  }
+  .teamImg {
+    width: 80px;
+  }
+  .teamTxtInfo {
+    margin-left: 60px;
+    min-width: 230px;
+  }
+  .teamName {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .teamJob,
+  .teamExp {
+    font-size: 12px;
+  }
+  .teamSection {
+    width: 100%;
+  }
+  .sectionHeader {
+    font-size: 17px;
+  }
+  .missionText,
+  .learnMore {
+    font-size: 12px;
+  }
+  .marketMakingVault {
+    max-width: 236px;
+    gap: 8px;
+  }
+  .cryptocurrencyIcon img {
+    width: 74%;
+  }
+  .teamText {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .contactUsButton {
+    width: 136px;
+    height: 38px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 441px) {
+  .teamSectionText {
+    font-size: 14px;
+  }
+}

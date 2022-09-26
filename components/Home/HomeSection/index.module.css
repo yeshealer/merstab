@@ -1,0 +1,134 @@
+@font-face {
+  font-family: OpneSans;
+  src: url(../../../public/font/OpenSans-Regular.ttf);
+}
+
+.homeSection {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -61px;
+}
+
+.startEarningRow {
+  display: flex;
+  height: 100vh;
+  background: url(../../../public/magic/abstract-wave-first-screen.png)
+    no-repeat;
+  background-position: 130% -50px;
+  background-size: 80%;
+  padding: 0 30px;
+}
+
+.yieldButton {
+  width: 80px;
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  width: 190px;
+  height: 48px;
+  cursor: pointer;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  align-self: center;
+}
+
+.yieldButton:hover {
+  background: linear-gradient(112.76deg, #2723e2 7.83%, #af09d9 52.35%);
+  box-shadow: 0px 0px 12px #9747ff;
+}
+
+.yieldButton:focus {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 2px #ffffff;
+}
+
+.yieldButton:pressed {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 12px #9747ff, inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.startEarningSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 100px;
+  justify-content: flex-start;
+}
+
+.startEarningSection p {
+  color: white;
+  margin: 10px 0 50px;
+  font-size: 18px;
+}
+
+.earnYieldHeader {
+  font-family: OpneSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 68px;
+  text-overflow: wrap;
+  max-width: 630px;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.gardientYieldHeader {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55)
+    ),
+    linear-gradient(125.07deg, rgba(39, 35, 226, 0.59) 12.86%, #af09d9 41.24%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gardientYieldHeader span {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .startEarningRow {
+    height: 83vh;
+  }
+  .earnYieldHeader {
+    width: unset;
+  }
+  .earnYieldHeader {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 991px) {
+  .startEarningRow {
+    background-position: 131% 0;
+  }
+  .startEarningSection p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 770px) {
+  .startEarningRow {
+    height: auto;
+    padding: 0 15px 83vw 15px;
+    background-position: 33% 100%;
+    background-size: 110%;
+  }
+  .earnYieldHeader {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .startEarningSection p {
+    font-size: 14px;
+  }
+}

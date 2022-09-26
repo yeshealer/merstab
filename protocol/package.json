@@ -1,0 +1,19 @@
+{
+  "name": "@merstab/cli",
+  "version": "1.0.0",
+  "description": "A simple cli for interacting with the merstab program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bbroeking456 <bbroeking456@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@project-serum/anchor": "^0.24.2",
+    "@solana/spl-token": "^0.2.0",
+    "@solana/web3.js": "^1.43.1",
+    "commander": "^9.2.0",
+    "loglevel": "^1.8.0",
+    "ts-node": "^10.8.0"
+  }
+}

@@ -1,0 +1,99 @@
+.vaultDepositInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 100px 0px 60px;
+}
+
+.depositInfoTle {
+  font-size: 46px;
+  color: white;
+}
+
+.depositInfoSmTle {
+  font-size: 24px;
+}
+
+.infoAssetIcon {
+  display: flex;
+  align-items: center;
+  flex: 0 1 auto;
+  justify-content: flex-start;
+  margin-right: 160px;
+}
+
+.vaultDepositsStatus {
+  align-self: center;
+  flex: 1 1 auto;
+}
+
+.depositInfo {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.progressBar .ant-progress-bg {
+  height: 16px;
+}
+
+@media (max-width: 1200px) {
+  .infoAssetIcon {
+    margin-right: 10vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .depositInfoTle {
+    font-size: 36px;
+  }
+  .depositInfoSmTle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 833px) {
+  .vaultDepositInfo {
+    flex-direction: column;
+  }
+  .infoAssetIcon {
+    padding-bottom: 30px;
+  }
+  .vaultDepositsStatus {
+    flex: unset;
+    align-self: unset;
+    width: 80%;
+  }
+}
+
+@media (max-width: 770px) {
+  .infoAssetIcon {
+    margin-right: 0;
+  }
+  .vaultDepositsStatus {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 551px) {
+  .vaultDepositsStatus {
+    width: 100%;
+  }
+  .vaultDepositInfo {
+    padding: 45px 0 30px;
+  }
+  .depositInfo {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .depositInfoTle {
+    font-size: 30px;
+  }
+}

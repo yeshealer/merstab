@@ -1,0 +1,17 @@
+.civicButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  margin-right: 12px;
+  background-color: #1a1a1a;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .civicButton {
+    display: none !important;
+  }
+}

@@ -1,0 +1,200 @@
+.innerTransfer {
+  background-color: #080808;
+  border: 1px solid #474747;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 0 12px;
+}
+
+.positionRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 10px;
+  color: #bfb6b6;
+  font-size: 16px;
+}
+
+.walletBalanceRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 18px;
+  color: #bfb6b6;
+}
+
+.fundsProcessingRow {
+  padding: 18px 0;
+  color: #bfb6b6;
+  font-size: 14px;
+}
+
+.walletBalance {
+  font-size: 14px;
+}
+
+.transactionButton {
+  height: 55px;
+  width: 220px;
+  border: 0;
+  background-color: #080808;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.transactionButton:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.valueInputRow {
+  display: flex;
+  align-items: center;
+  margin: 4px 10px;
+  background-color: #232424;
+  border-radius: 2px;
+}
+
+.maxButton {
+  margin: 4px 4px 4px 10px;
+  height: 24px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  background: #343636;
+  border: 0;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+.maxButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.amountField {
+  height: 56px;
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  background-color: #232424;
+  color: #bfb6b6;
+  text-align: right;
+  font-size: 24px;
+}
+
+.currency {
+  padding: 0px 10px;
+}
+
+.displayRow {
+  display: flex;
+}
+
+.bottomRow {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  border-top: 1px solid #474747;
+}
+
+.actionButton {
+  width: 100%;
+  background: #3a2d87;
+  border-radius: 2px;
+  margin: 10px;
+  height: 48px;
+  border: 0;
+  color: #ffffff;
+}
+
+.actionButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.actionButton:disabled {
+  background-color: #242424;
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+}
+
+.active {
+  border-bottom: 2px solid;
+  border-image-source: linear-gradient(to left, #484799 50%, #6b4098 100%);
+  border-image-slice: 1;
+
+  color: #fff;
+}
+
+.spacer {
+  width: 8px;
+}
+
+.availableDepositTokenRow {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.walletBalanceText {
+  font-size: 14px;
+  color: #fff !important;
+  opacity: 0.38 !important;
+}
+
+.amountEarned {
+  font-size: 14px;
+  color: #fff !important;
+}
+
+.amountEarnedPos {
+  font-size: 14px;
+  color: greenyellow !important;
+}
+
+.amountEarnedNeg {
+  font-size: 14px;
+  color: red !important;
+}
+
+.walletBalanceContainer {
+  display: flex;
+  flex: 1 1 400px;
+  justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+  .transferSection {
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .transferSection {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .transactionButton {
+    width: 110px;
+  }
+
+  .transferSection {
+    padding: 0px;
+    margin-top: 10px;
+  }
+}

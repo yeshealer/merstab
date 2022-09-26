@@ -1,0 +1,35 @@
+.infoSection {
+  max-width: 510px;
+}
+
+.infoStep {
+  padding-bottom: 32px;
+}
+
+.sectionHeader {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sectionText {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+@media (max-width: 1100px) {
+  .infoSection {
+    width: 47%;
+  }
+  .sectionText {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .infoSection {
+    width: 100%;
+    max-width: initial;
+  }
+}

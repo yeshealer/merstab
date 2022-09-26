@@ -1,0 +1,147 @@
+.missionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  background: url(../../../public/magic/detailed_wireframe_modern_techno_landscape_design_2204.png)
+    100% 100% no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.missionWrapper {
+  max-width: 1060px;
+  align-self: center;
+  margin: auto;
+}
+
+.ourMissionLine {
+  position: relative;
+  font-size: 20px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ourMissionLine::after,
+.ourMissionLine::before {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 1px;
+  content: '\a0';
+  background-color: #dc5355;
+}
+
+.ourMissionLine::before {
+  margin-left: -50%;
+  text-align: right;
+}
+
+.lineSpan {
+  background: transparent;
+  background: linear-gradient(90deg, #e15d47 -12.4%, #c62e85 112.8%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 15px;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15vh 0px;
+}
+
+.missionFlexColumn {
+  display: flex;
+  flex-direction: column;
+  max-width: 1060px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionHeader {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.missionText {
+  display: flex;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.learnMore {
+  border: 0;
+  background: transparent;
+  color: #cb367b;
+  font-size: 14px;
+  padding-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.missionBottomLine {
+  max-width: 1060px;
+  text-align: center;
+  border-bottom: 1px solid #dc5355;
+  line-height: 0.1em;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .missionSection {
+    height: 83vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .flexRow {
+    padding: 10vh 0;
+  }
+  .ourMissionLine {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 770px) {
+  .missionSection {
+    height: auto;
+    padding-bottom: 50vw;
+    margin-top: 100px;
+  }
+  .ourMissionLine {
+    padding-top: 0px;
+  }
+  .missionWrapper,
+  .missionBottomLine {
+    width: 100%;
+  }
+  .flexRow {
+    padding: 33px 0;
+  }
+  .missionFlexColumn {
+    width: unset;
+  }
+  .missionBottomLine {
+    display: none;
+  }
+}
+
+@media (max-width: 551px) {
+  .sectionHeader {
+    font-size: 17px;
+  }
+  .missionText,
+  .learnMore {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}

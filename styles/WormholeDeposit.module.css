@@ -1,0 +1,21 @@
+.actionButton {
+  flex: 1 1 400px;
+  background: #dc5355;
+  border-radius: 2px;
+  margin: 20px 10px 10px 10px;
+  height: 48px;
+  border: 0;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.actionButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.actionButton:disabled {
+  background-color: #242424;
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+}

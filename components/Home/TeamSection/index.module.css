@@ -1,0 +1,235 @@
+.teamSection {
+  position: relative;
+  width: 100vw;
+  margin-top: 100px;
+  padding-bottom: 200px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: -65px;
+  background: url(../../../public/magic/rectangle.png) no-repeat;
+  background-position: center top;
+  background-size: 100%;
+}
+
+.teamHeader {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 56px;
+  color: #ffffff;
+  margin: 5px 0 30px;
+  text-align: center;
+}
+
+.teamMembers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding-bottom: 40px;
+  gap: 0 90px;
+}
+
+.team {
+  width: 100%;
+  margin-top: 40px;
+  padding: 40px 0 40px 78px;
+  position: relative;
+  border: 2px solid #4d1c73;
+  background: linear-gradient(150.31deg, #240a38 28.34%, rgba(45, 47, 103, 0.2) 106.35%);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  overflow-wrap: break-word;
+}
+
+.teamEndBg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: url(../../../public/magic/perspective-grid.png) no-repeat;
+  background-position: bottom;
+  background-size: 100% 90px;
+}
+
+.teamImg img {
+  display: block;
+  width: 100%;
+}
+
+.teamPhoto {
+  position: absolute;
+  max-width: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: auto;
+  border: 3px solid #452360;
+  left: -50px;
+  top: 30px;
+}
+
+.teamPhotoBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: inset 0px 15px 15px rgba(0, 0, 0, 0.25);
+}
+
+.teamName {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.teamJob {
+  color: white;
+  margin-top: 12px;
+  margin-block-end: 0;
+}
+
+.teamSectionText {
+  max-width: 990px;
+  margin: auto;
+  text-align: center;
+}
+
+.teamExp {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.teamText {
+  padding-bottom: 45px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.74);
+  text-align: left;
+}
+
+.contactUsButton {
+  background: linear-gradient(150deg, #2723e2 30%, #af09d9);
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  width: 156px;
+  height: 48px;
+  cursor: pointer;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contactUsButton:hover {
+  background: linear-gradient(112.76deg, #2723e2 7.83%, #af09d9 52.35%);
+  box-shadow: 0px 0px 12px #9747ff;
+}
+
+.contactUsButton:focus {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 2px #ffffff;
+}
+
+.contactUsButton:pressed {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 12px #9747ff, inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1200px) {
+  .teamSection {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .teamHeader {
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+  .teamMembers {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .team {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .teamSectionText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .teamMembers {
+    flex-direction: column;
+  }
+  .team {
+    position: relative;
+  }
+  .teamName {
+    text-align: left;
+  }
+  .teamExp {
+    font-size: 14px;
+  }
+  .teamTxtInfo {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 770px) {
+  .teamMembers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team {
+    width: 80%;
+  }
+  .teamHeader {
+    font-size: 18px;
+  }
+  .teamText {
+    width: unset;
+  }
+  .teamEndBg {
+    background-size: 220% 90px;
+  }
+}
+
+@media (max-width: 551px) {
+  .teamSection {
+    margin-bottom: -59px;
+  }
+  .team {
+    width: 90%;
+    margin-right: -20px;
+  }
+  .teamText {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .contactUsButton {
+    width: 136px;
+    height: 38px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 441px) {
+  .teamSectionText {
+    font-size: 14px;
+  }
+}

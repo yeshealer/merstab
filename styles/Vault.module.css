@@ -1,0 +1,121 @@
+.vaultPageWrapper {
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: url(/_next/static/media/rectangle.980d7839.png) no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.vaultSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: stretch;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  max-width: 1060px;
+  margin: auto;
+}
+
+.vimeoWrapper {
+  position: absolute;
+  bottom: -50vh;
+  left: 0;
+  width: 100vw;
+  height: 66.66vw;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.vimeoWrapper iframe {
+  width: 100vw;
+  height: 69.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vaultDeposits {
+  flex: 1 1 15%;
+}
+
+.vaultPerformance {
+  flex: 1 1 15%;
+  border-radius: 4px;
+}
+
+.vaultTransactions {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 70px;
+}
+
+.background {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  background-color: transparent;
+  opacity: 0.1;
+  /* margin-top: 300px; */
+  z-index: 1;
+}
+
+.wavePosition {
+  position: absolute;
+  z-index: -1;
+  bottom: 5vh;
+  display: flex;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 66.66vw;
+}
+
+.landingImage {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+@media (max-width: 1100px) {
+  .transferSection {
+    width: 47%;
+  }
+}
+
+@media (max-width: 770px) {
+  .vaultSection {
+    padding: 0;
+  }
+
+  .vaultDepositsStatus {
+    margin-right: 0;
+  }
+
+  .vaultTransactions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .vaultTransactions {
+    padding-bottom: 40px;
+  }
+}

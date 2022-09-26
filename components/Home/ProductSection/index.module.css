@@ -1,0 +1,194 @@
+.ourProductsRow {
+  position: relative;
+  padding-top: 140px;
+  margin-top: -70px;
+  background: linear-gradient(
+    180deg,
+    rgba(39, 35, 226, 0.2) 3.87%,
+    rgba(39, 35, 226, 0) 100%
+  );
+}
+
+.btwGradient {
+  position: absolute;
+  height: 180px;
+  width: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, #421543 0%, #0e0d2f 72.09%);
+  top: -30px;
+  filter: blur(30px);
+}
+
+.flexColumnProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.productTitle {
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.ourProductsSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.text {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.btcPerpDescription {
+  align-self: flex-start;
+  max-width: 360px;
+  line-height: 1.5;
+}
+
+.perpHeader {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.marketMakingVault {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px 20px;
+  background: linear-gradient(
+    130deg,
+    rgb(175 9 217 / 30%) 0%,
+    rgba(220, 83, 85, 0.03) 98.33%
+  );
+  border: 1px solid #474747;
+  box-sizing: border-box;
+  border-radius: 8px;
+  min-width: 330px;
+  gap: 35px;
+}
+
+.marketMakingVault:hover {
+  filter: drop-shadow(0px 1px 32px #af09d9);
+  border: 1px solid #af09d9;
+  cursor: pointer;
+}
+
+.vaultHeader {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.18px;
+  color: #ffffff;
+}
+
+.cryptocurrencyIcon img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.cryptocurrencyIcon img::before {
+  position: absolute;
+  width: 72%;
+  height: 72%;
+}
+
+.apy {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #ffffff;
+  align-self: center;
+}
+
+.vaultText {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+@media (max-width: 1200px) {
+  .ourProductsSection {
+    justify-content: space-between;
+  }
+  .perpHeader {
+    align-self: center;
+  }
+  .btcPerpDescription {
+    align-self: center;
+    padding-bottom: 40px;
+    width: unset;
+  }
+}
+
+@media (max-width: 991px) {
+  .cryptocurrencyIcon img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 770px) {
+  .productTitle {
+    font-size: 18px;
+  }
+  .text {
+    width: 100%;
+  }
+  .perpHeader {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .btcPerpDescription {
+    max-width: initial;
+    font-size: 12px;
+  }
+  .marketMakingVault {
+    max-width: 300px;
+    margin: auto;
+    width: 100%;
+    min-width: initial;
+  }
+  .ourProductsSection {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 551px) {
+  .marketMakingVault {
+    max-width: 236px;
+    gap: 8px;
+  }
+  .cryptocurrencyIcon img {
+    width: 74%;
+  }
+}

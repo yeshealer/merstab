@@ -1,0 +1,95 @@
+.performance {
+  min-width: 310px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 6px;
+  padding: 30px;
+  background: #1a1a1a;
+  position: relative;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.performanceBg {
+  position: absolute;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, calc(-50% - 0.5px));
+  background: linear-gradient(-30deg, #c354e6, #6f64eb);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  z-index: -1;
+}
+
+.vaultPerformance {
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.vaultRateCon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metrics {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  background: #1a1a1a;
+  border: 2px solid #474747;
+  box-sizing: border-box;
+  padding: 25px 40px;
+  border-radius: 6px;
+}
+
+.vaultPerformanceInfo {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.metricRow {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(50px, 1fr));
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1200px) {
+  .vaultPerformanceInfo {
+    flex-direction: column;
+  }
+  .performance {
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .metrics {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 810px) {
+  .metricRow {
+    display: block;
+    width: 50%;
+  }
+}
+
+@media (max-width: 551px) {
+  .performance {
+    min-width: initial;
+  }
+  .vaultPerformance {
+    min-width: 228px;
+    font-size: 20px;
+  }
+}

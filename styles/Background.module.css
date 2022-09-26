@@ -1,0 +1,42 @@
+.wavePosition {
+  position: absolute;
+  z-index: -1;
+  bottom: 5vh;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 66.66vw;
+}
+
+.landingImage {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.vimeoWrapper {
+  position: absolute;
+  bottom: -35vw;
+  left: 0;
+  width: 100vw;
+  height: 66.66vw;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.vimeoWrapper iframe {
+  width: 100vw;
+  height: 69.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

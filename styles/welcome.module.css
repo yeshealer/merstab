@@ -1,0 +1,164 @@
+.container {
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  backdrop-filter: blur(2px);
+  width: 100vw;
+}
+
+.modalBody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: #0b0411;
+  border: 3px solid #2b0d42;
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.logo {
+  position: relative;
+}
+
+.beta {
+  position: absolute;
+  top: -12px;
+  right: 50%;
+  transform: translateX(97px);
+  border: 1px solid #4d1b75;
+  border-radius: 20px;
+  padding: 2px 9px;
+  background: #674a9526;
+  font-size: 14px;
+}
+
+.header {
+  margin-top: 36px;
+  font-size: 32px;
+  line-height: 68px;
+  font-weight: 700;
+  font-family: "Rubik";
+  font-style: normal;
+  color: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+}
+
+.headerGradient {
+  font-size: 32px;
+  background: linear-gradient(112.42deg, #6f64eb 30%, #c353e5 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block;
+}
+
+.content {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.gradientBtn {
+  width: 80px;
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  width: 190px;
+  height: 48px;
+  cursor: pointer;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  align-self: center;
+  width: 100%;
+}
+
+.gradientBtn:hover {
+  background: linear-gradient(112.76deg, #2723e2 7.83%, #af09d9 52.35%);
+  box-shadow: 0px 0px 12px #9747ff;
+}
+
+.gradientBtn:focus {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 2px #ffffff;
+}
+
+.gradientBtn:pressed {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 12px #9747ff, inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.gradientBorder {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#0b0411, #0b0411) padding-box, linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  padding: 10px;
+  width: 190px;
+  height: 48px;
+  cursor: pointer;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.gradientBorder:hover {
+  border: none;
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 12px #9747ff;
+}
+.gradientBorder:focus {
+  border: none;
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 2px #ffffff;
+}
+
+.gradientBorder:pressed {
+  background: linear-gradient(112.42deg, #2723e2 7.74%, #af09d9 90.58%);
+  box-shadow: 0px 0px 12px #9747ff, inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 720px) {
+  .modalBody {
+    max-width: 360px;
+    padding: 40px 20px;
+  }
+  .header {
+    font-size: 24px;
+    line-height: 68px;
+  }
+
+  .beta {
+    font-size: 12px;
+  }
+
+  .content {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
