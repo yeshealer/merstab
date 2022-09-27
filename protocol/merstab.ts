@@ -7,7 +7,7 @@ import {
   TOKEN_PROGRAM_ID,
   ASSOCIATED_TOKEN_PROGRAM_ID,
   getAccount,
-} from '@solana/spl-token'
+} from '../node_modules/@solana/spl-token'
 import * as anchor from '@project-serum/anchor'
 import {
   Keypair,
