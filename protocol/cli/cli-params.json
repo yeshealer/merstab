@@ -1,0 +1,6 @@
+{
+  "MERSTAB_PROGRAM_ID": "6ujVJiHnyqaTBHzwwfySzTDX5EPFgmXqnibuMp3Hun1w",
+  "env": "devnet",
+  "keypairPath": "~/.config/solana/id.json",
+  "loglevel": "DEBUG"
+}
